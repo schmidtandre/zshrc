@@ -2,6 +2,7 @@ export PROMPT=$'%{\e[0;32m%}%n@%m(%!):%(4c,./%1~,%~)%?%{\e[0;0m%}$ '
 export HISTFILE=~/.zsh_history
 export HISTSIZE=5000
 export SAVEHIST=5000
+export EDITOR=/usr/bin/vim
 alias irb='irb1.8 --readline -r irb/completion'
 alias ls='ls --color'
 alias ll='ls -laF --color'
