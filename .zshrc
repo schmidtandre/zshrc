@@ -3,7 +3,6 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=5000
 export SAVEHIST=5000
 export EDITOR=/usr/bin/vim
-alias irb='irb1.8 --readline -r irb/completion'
 alias ls='ls --color'
 alias ll='ls -laF --color'
 alias l='ls -ltraF --color'
@@ -16,6 +15,10 @@ alias dt='dmesg|tail'
 alias spdf='sudo -u xpdf -H xpdf'
 alias n9='ssh root@10.0.0.1'
 alias n900='ssh root@10.0.0.1'
+alias grep='grep --color=auto'
+
+#use emacs keybingings -> ctrl+a ctrl+e alt+.
+bindkey -e
 
 setopt  brace_ccl inc_append_history hist_ignore_space \
 	hist_no_functions hist_ignore_all_dups hist_expire_dups_first \
@@ -74,5 +77,3 @@ case $TERM in
 			}
          ;;
 esac
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
