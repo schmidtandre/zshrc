@@ -49,11 +49,6 @@ zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 # completion
 zstyle ':completion:*:processes' command 'ps x -o pid,nice,pcpu,tt,args'
 
-# Hosts to use for completion (see later zstyle)
-zstyle '*' hosts \
-    haddock bereboot marsupilami xs4all \
-    jochem surrounder blokkie localhost
-
 # Filename suffixes to ignore during completion (except after rm
 # command)
 zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns \
